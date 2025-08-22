@@ -15,7 +15,20 @@ header {
   padding: 100px 20px;
   text-align: center;
   position: relative;
+  
 }
+
+.foto-perfil {
+  width: 150px;             /* tamaño de la foto */
+  height: 150px;            /* tamaño de la foto */
+  border-radius: 50%;       /* hace la foto circular */
+  object-fit: cover;        /* recorta correctamente si no es cuadrada */
+  border: 4px solid #00bcd4; /* borde opcional */
+  display: block;
+  margin: 0 auto 20px;      /* centra la foto y separa del texto */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* sombra opcional */
+}
+
 
 header::before {
   content: "";
@@ -32,26 +45,23 @@ header h1, header p {
 }
 
 /* ======== Efecto máquina de escribir ======== */
+/* ======== Efecto máquina de escribir ======== */
 header h1 {
   font-size: 2.5em;
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #fff;  /* cursor */
-  width: 0;
+  border-right: 3px solid #fff;  /* cursor fijo al final */
+  width: 0;                       /* empieza desde 0 */
   margin: 0 auto;
-  animation: typing 5s steps(30, end) forwards, blink 0.7s step-end 5s; 
-  /* blink dura mientras typing (5s), luego se detiene */
+  animation: typing 2s steps(14, end) forwards; /* escribe y se queda */
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0 }   /* empieza desde ancho 0 */
+  to { width: 14ch }  /* 14 caracteres: "Hola, soy Ivan" */
 }
 
-@keyframes blink {
-  50% { border-color: transparent }
-}
 
 /* ======== Subtítulo aparece después ======== */
 header p {
