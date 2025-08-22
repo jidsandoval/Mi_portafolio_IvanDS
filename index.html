@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Ivan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======== Presentación ======== -->
+  <header id="home">
+    <h1 class="typewriter">Hola, Soy Ivan</h1>
+    <p>Desarrollador Freelance</p>
+  </header>
+
+  <!-- ======== Menú ======== -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portafolio</a>
+    <a href="#services">Servicios</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <!-- ======== About ======== -->
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>Soy un desarrollador freelance apasionado por crear soluciones digitales, 
+       desde aplicaciones web hasta proyectos de IoT. Me gusta trabajar con clientes 
+       para transformar ideas en productos reales.</p>
+  </section>
+
+  <!-- ======== Skills ======== -->
+  <section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li><i class="fab fa-html5"></i> HTML & CSS</li>
+    <li><i class="fab fa-js-square"></i> JavaScript</li>
+    <li><i class="fas fa-code"></i>C/C++</li>
+    <li><i class="fab fa-python"></i> Python/Flask/Kivy/MicroPýthon</li>
+    <li><i class="fas fa-microchip"></i> Arduino/ESP32/PIC/ARM</li>
+    <li><i class="fas fa-wifi"></i> IoT</li>
+  </ul>
+</section>
+
+
+  <!-- ======== Portafolio ======== -->
+  <section id="portfolio">
+    <h2>Portafolio</h2>
+    <div class="portfolio-container">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Proyecto 1">
+        <h3>Proyecto 1</h3>
+        <p>Descripción breve del proyecto.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Descripción breve del proyecto.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Proyecto 3">
+        <h3>Proyecto 3</h3>
+        <p>Descripción breve del proyecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Servicios ======== -->
+  <section id="services">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Desarrollo Web</h3>
+        <p>Diseño y desarrollo de sitios web modernos y funcionales.</p>
+      </div>
+      <div class="service">
+        <h3>IoT</h3>
+        <p>Conexión de dispositivos inteligentes y proyectos de automatización.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Contacto ======== -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- ======== Footer ======== -->
+  <footer>
+    <p>© 2025 Ivan - Desarrollador Freelance</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
