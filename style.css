@@ -1,6 +1,7 @@
 /* ======== Estilos Generales ======== */
 body {
   font-family: Arial, sans-serif;
+  font-weight: bold;    /* bold = 700 */
   margin: 0;
   padding: 0;
   color: #333;
@@ -114,7 +115,7 @@ h2 {
 
 #skills li {
   background: #00bcd4;
-  color: white;
+  color: rgb(10, 10, 10), 7, 7);
   margin: 10px;
   padding: 10px 20px;
   border-radius: 20px;
@@ -122,6 +123,7 @@ h2 {
   align-items: center;
   gap: 10px; /* espacio entre icono y texto */
   font-size: 1.1em;
+  font-weight: bold;    /* bold = 700 */
 }
 
 
